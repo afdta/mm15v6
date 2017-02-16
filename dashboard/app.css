@@ -1,0 +1,346 @@
+.metro-interactive{
+	position:relative;
+}
+
+.metro-interactive *{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	line-height:1.6em;	
+}
+
+.metro-interactive.makesans, .metro-interactive .makesans *{
+	font-family: franklin-gothic-urw,helvetica,sans-serif;
+}
+
+.metro-interactive p{
+	margin:0em 0em 1em 0em;
+}
+.metro-interactive h1{
+	font-size:2em;
+	font-weight:bold;
+	margin: 0.6em 0em;
+}
+.metro-interactive h2{
+	font-size:1.5em;
+	font-weight:bold;
+	margin: 0.8em 0em;
+}
+.metro-interactive b{
+	font-weight:bold;
+}
+.metro-interactive ul{
+	list-style-type:disc;
+	padding:0em 0em 0em 2.25em;
+}
+
+.metro-interactive .source-text{
+	font-size:1em;
+	font-style:italic;
+	padding:1em 0em 0em 0em;
+	position:relative;
+}
+.metro-interactive .source-text:before{
+	position:absolute;
+	width:0.8em;
+	height:1em;
+	top:0.85em;
+	left:0px;
+	border:1px solid #555555;
+	border-width:1px 0px 0px 0px;
+	content:"";
+}
+
+.metro-interactive .mi-button{
+	float:left;
+	background-color:#eeeeee;
+	padding:0.25em 1em;
+	border:1px solid #eeeeee;
+	margin:1px;
+	cursor:pointer;
+	user-select: none;  
+}
+.metro-interactive .mi-button.stacked{
+	float:none;
+}
+.metro-interactive .mi-button.selected{
+	background-color: #dc2a2a;
+	border-color: #dc2a2a;
+}
+.metro-interactive .mi-button p{
+	margin:0em;
+	line-height:1em;
+	color:#333333;
+}
+.metro-interactive .mi-button.selected p{
+	color:#ffffff;
+}
+
+.mm-section{
+	margin:0em 0em 3em 0em;
+	padding:0em;
+	border:0px solid #aaaaaa;
+	border-width:0px 0px 0px 0px;
+}
+
+.mm-section .mm-graphic{
+	
+}
+
+/*clearfix these classes*/
+.c-fix:after, .content-box:after, .mm-grid:after, .card-box:after{
+	content:""; 
+	display:table; 
+	clear:both;
+}
+
+.card-box{
+	margin:2em 0em 3em 0em;
+}
+
+.metro-interactive svg{
+	width:100%;
+	height:100%;
+}
+
+.disable-highlight, .disable-highlight p, svg text{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;           
+}
+
+div.category-icon{
+	float:left;
+	width:60px;
+	height:80px;
+	margin:0em 1em 1em 0em;
+}
+
+div.mm-grid{
+	margin:0em auto;
+	width:100%;
+}
+div.mm-grid > div{
+	float:left;
+}
+
+div.reading.set-apart{
+	margin:4em auto;
+}
+
+div.reading{padding:0em 1em;}
+.reading, .reading > *{
+	line-height:1.6em;
+	max-width:780px;
+	margin:0em auto;
+}
+
+.content-box{
+	margin:0em auto 2em auto;
+	max-width:1200px;
+	width:100%;
+	padding:0em 0em 0em 0em;
+}
+
+.content-box.small{max-width:800px;}
+.content-box.medium{max-width:1200px;}
+.content-box.large{max-width:1600px;}
+
+.content-box.full-bleed{
+	padding:0px;
+	max-width:1920px;
+	margin:0em;
+}
+
+*.padded{padding:1em;}
+*.paddedx2,*.padded2x{padding:2em;}
+
+.content-box.set-apart{
+	padding: 2em 0em 1em 0em;
+	border: 1px solid #dc2a2a;
+	background-color:#eeeeee;
+	border-width: 0px 0px;
+	margin:4em auto;
+}
+
+
+.big-strong,.strong-bold,.chart-title{
+	font-size:1.25em;
+	font-weight:bold;
+}
+
+.as-table{
+	display:table;
+	margin:0em 0em 0em 0em;
+	border-spacing:0em 0em;
+	width: 100%;
+	table-layout:fixed;
+	/*width: calc(100% + 2em);*/
+}
+.row-of{display:table-row;width:100%;}
+
+.row-of > div *{
+	padding:0em;
+	margin:0em 0em 1em 0em;
+}
+.row-of > div *:first-child{margin-top: 0em;}
+.row-of > div{
+	display:table-cell;
+	vertical-align:top;
+	padding:0em 1em;
+	height:100%;
+	border-top:0px solid red;
+	line-height:1.6em;
+}
+.row-of > div:first-child{
+	margin-left:0%;
+}
+
+.el-w-info{
+	position:relative;
+}
+.el-w-info:after{
+	float:left;
+	content:"?";
+	width:15px;
+	height:15px;
+	font-size:13px;
+	line-height:13px;
+	padding:2px 1px;
+	border-radius:7.5px;
+	margin:0em 0em 0em 0.3em;
+	background-color:#aaaaaa;
+	border:0px solid #111111;
+}
+
+div.category-icon{
+	float:left;
+	width:60px;
+	height:60px;
+	margin:0em 1em 1em 0em;
+}
+
+.metro-interactive .grid-3-cols > div{
+	float:left;
+	width:33.3%;
+	padding:0em 2em 0em 0em;
+}
+
+@media (min-width:0px){
+	.row-of{display:block;}
+	.row-of > div{
+		display:block;
+		width:auto;
+		margin:0em 0em 1em 0em;
+	}
+
+	.metro-interactive .grid-3-cols > div{
+		float:none;
+		width:auto;
+		padding:1em 0em;
+	}
+
+	.row-of.two-three > div, .row-of.three-two > div{ width:auto; }
+	.row-of.two-three > div:first-child, .row-of.three-two > div:first-child{ width:auto; }
+
+	.row-of.l-m-r > div, .row-of.l-m-r > div.middle{width:auto;}
+
+	.metro-interactive .float-right, .metro-interactive .float-left,
+	.metro-interactive .float-left.two-fifths, .metro-interactive .float-right.two-fifths
+	{
+		float:none;
+		width:auto;
+		max-width:none;
+		min-width:0px;
+		margin:0em;
+	}
+
+	/*grid of 3 cols*/
+	div.mm-grid > div{
+		width:100%;
+		padding:0em 1em;
+		float:none;
+		margin:0em auto;
+		width:100%;
+		max-width:800px;
+	}
+	div.mm-grid > div > *{
+		width:auto;
+		max-width:none;
+	}
+
+	div.card-box > div{
+		width:40%;
+		float:left;
+		min-height:1em;
+	}
+	div.card-box > div.content-box{
+		width:60%;
+		float:left;
+		min-height:1em;
+	}
+}
+
+@media (min-width:780px){
+	.row-of{display:table-row;}
+	.row-of > div{
+		display:table-cell;
+		margin:0em;
+	}
+	.row-of.four-cells > div{ width:25%; }
+	.row-of.three-cells > div{ width:33%; }
+
+	.row-of.l-m-r > div.middle{min-width:auto; }
+
+	.row-of.two-three > div{ width:60%; }
+	.row-of.two-three > div:first-child{ width:40%; }
+
+	.row-of.three-two > div{ width:40%; }
+	.row-of.three-two > div:first-child{ width:60%; }
+
+	.metro-interactive .grid-3-cols > div{
+		float:left;
+		width:33.3%;
+		padding:0em 2em 0em 0em;
+	}
+
+	.metro-interactive .float-right, 
+	.metro-interactive .float-left{
+		float:left;
+		width:60%;
+		max-width:780px;
+		min-width:0px;
+		margin:0em;
+	}
+	.metro-interactive .float-right{
+		float:right;
+	}
+	.metro-interactive .float-left.two-fifths, .metro-interactive .float-right.two-fifths{
+		width:40%;
+	}
+
+}
+
+@media (min-width:1300px){
+	/*grid of 3 cols*/
+	div.mm-grid > div{
+		width:320px;
+		width:calc(50% - 400px);
+		padding:0em 1em;
+		float:left;
+		min-height:1em;
+	}
+	div.mm-grid > div.center-col{
+		width:800px;
+	}
+	div.mm-grid > div > *{
+		width:auto;
+		max-width:400px;
+	}
+	div.mm-grid > div.center-col > *{
+		max-width:800px;
+	}
+}
+
